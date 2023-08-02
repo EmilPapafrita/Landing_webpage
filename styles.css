@@ -7,7 +7,7 @@ li { /* removed the bullet points from the list*/
     list-style: none;
 } 
 
-body { /*  */
+body { /* Flex container */
     display: flex;
     flex-direction: column;
 }
@@ -16,7 +16,7 @@ body { /*  */
 .first {
     background-color: #1F2937;
     padding: 10px;
-    gap: 200px;
+    gap: 300px;
     display: flex;
     justify-content: space-between;
 }
@@ -69,30 +69,36 @@ body { /*  */
     color: white;
     gap: 20px;
     font-size: small;
-} 
+}
+.spacer { /* Empty flex item used for spacing when zooming in and out of webpage */
+    flex: 2;
+    margin-right: -700px;
+}
 .Header-Logo {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
     font-weight: bold;
     color: white;
-    text-align: center;
+    margin-left: -130px;
 }
 
-/* second section ~ styling and adjusting the flex items */
-.second .left-panel{
+/* second section ~ styling the welcome message with image and signup button*/
+.second .left-panel{ /* left panel container */
     width: 300px;
     height: 170px;
     margin-left: -50px;
     background-color: #1F2937;
     color: white;
 }
-.second .left-panel h1 {
+.second .left-panel h1 { /* welcome message header */
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.second .left-panel p {
+.second .left-panel p { /* description paragraph under welcome header*/
     font-size: small;
 }
-.second .left-panel button {
+.second .left-panel button { /* sign up button */
     margin-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -102,18 +108,19 @@ body { /*  */
     background-color: #3882F6;
     cursor: pointer;
 }
-.second .left-panel button:hover {
+.second .left-panel button:hover { /* when hovering over button */
     background-color: white;
     color: #3882F6;
 }
-.second .right-panel {
+.second .right-panel { /* right panel container */
     border: solid black;
+    display: flex;
     width: 300px;
     height: 170px;
     background-color: rgb(143, 142, 142);
 }
 
-/* third section ~ */
+/* third section ~ title header*/
 .third {
     margin: 0;
     padding: 0;
@@ -122,7 +129,7 @@ body { /*  */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* fourth section flex items */
+/* fourth section ~ programming languages images and text description */
 .fourth .info {
     margin-top: -100px;
     width: 80px;
@@ -141,7 +148,7 @@ body { /*  */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* fifth section flex items*/
+/* fifth section ~ quote and author credit*/
 .fifth .quote {
     width: 500px;
     height: 100px;
@@ -159,7 +166,7 @@ body { /*  */
     color: rgb(59, 59, 59);
 }
 
-/* sixth section flex items */
+/* sixth section ~ learn more and sign up button */
 .sixth .left-panel{
     width: 300px;
     padding: 15px;
@@ -204,7 +211,7 @@ body { /*  */
     color: #3882F6;
 }
 
-/* seventh section ~ */
+/* seventh section ~ footer */
 .seventh {
     text-align: center;
     color: white;
