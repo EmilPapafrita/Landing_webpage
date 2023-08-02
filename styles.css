@@ -1,0 +1,118 @@
+html, body { /* Used to let the flex columns use up all the vertical space*/
+    height: 100%;
+    margin: 0;
+} 
+
+li { /* removed the bullet points from the list*/
+    list-style: none;
+} 
+
+body { /*  */
+    display: flex;
+    flex-direction: column;
+}
+
+/* The numbered sections*/
+.first {
+    background-color: red;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.second {
+    background-color: orange;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third {
+    background-color: yellow;
+    padding: 10px;
+}
+.fourth {
+    background-color: blue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.fifth {
+    background-color: green;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sixth {
+    background-color: purple;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seventh {
+    background-color: gray;
+    padding: 10px;
+}
+
+/* first section ~ for styling the flex items in the header links(three links)*/
+.Header-Link {
+    display: flex;
+    margin: 0;
+} 
+
+/* second section ~ styling and adjusting the flex items */
+.second .left-panel{
+    border: solid black;
+    width: 300px;
+    height: 110px;
+}
+.second .right-panel {
+    border: solid black;
+    width: 300px;
+    height: 110px;
+}
+
+/* third section ~ */
+.third {
+    text-align: center;
+}
+
+/* fourth section flex items */
+.fourth .info img {
+    border: solid black;
+    width: 80px;
+    height: 80px;
+}
+
+/* fifth section flex items*/
+.fifth .quote {
+    border: solid black;
+    width: 500px;
+    height: 100px;
+}
+.fifth .author {
+    border: solid black;
+    width: 500px;
+}
+
+/* sixth section flex items */
+.sixth .left-panel{
+    border: solid black;
+    width: 300px;
+    height: 65px;
+}
+.sixth .right-panel {
+    border: solid black;
+    width: 300px;
+    height: 65px;
+}
+
+/* seventh section ~ */
+.seventh {
+    text-align: center;
+}
+
