@@ -16,12 +16,13 @@ body { /*  */
 .first {
     background-color: #1F2937;
     padding: 10px;
+    gap: 200px;
     display: flex;
     justify-content: space-between;
 }
 .second {
     background-color: orange;
-    flex: 1;
+    flex: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,28 +63,53 @@ body { /*  */
 
 /* first section ~ for styling the flex items in the header links(three links)*/
 .Header-Link {
+    flex: 1;
     display: flex;
     margin: 0;
-    color: gray;
+    color: white;
     gap: 20px;
+    font-size: small;
 } 
 .Header-Logo {
+    flex: 1;
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
 /* second section ~ styling and adjusting the flex items */
 .second .left-panel{
-    border: solid black;
     width: 300px;
-    height: 110px;
+    height: 170px;
+    margin-left: -50px;
     background-color: #1F2937;
     color: white;
+}
+.second .left-panel h1 {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.second .left-panel p {
+    font-size: small;
+}
+.second .left-panel button {
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #3882F6;
+    cursor: pointer;
+}
+.second .left-panel button:hover {
+    background-color: white;
+    color: #3882F6;
 }
 .second .right-panel {
     border: solid black;
     width: 300px;
-    height: 110px;
+    height: 170px;
     background-color: rgb(143, 142, 142);
 }
 
@@ -92,6 +118,8 @@ body { /*  */
     margin: 0;
     padding: 0;
     text-align: center;
+    color: #1F2937;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* fourth section flex items */
@@ -105,6 +133,12 @@ body { /*  */
     border-radius: 10%;
     width: 80px;
     height: 80px;
+}
+.fourth .info .text {
+    text-align: center;
+    font-weight: bold;
+    color: #1F2937;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* fifth section flex items*/
@@ -127,19 +161,53 @@ body { /*  */
 
 /* sixth section flex items */
 .sixth .left-panel{
-    border: solid black;
     width: 300px;
-    height: 65px;
+    padding: 15px;
+    padding-bottom: 14px;
+    background-color: #3882F6;
+}
+.sixth .left-panel .learn-more {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sixth .left-panel .sign-up {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .sixth .right-panel {
-    border: solid black;
-    width: 300px;
-    height: 65px;
+    width: 200px;
+    padding: 30px;
+    background-color: #3882F6;
+    text-align: center;
+}
+.sixth .right-panel button {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #3882F6;
+    cursor: pointer;
+}
+.sixth .right-panel button:hover {
+    background-color: white;
+    color: #3882F6;
 }
 
 /* seventh section ~ */
 .seventh {
     text-align: center;
     color: white;
+    font-size: x-small;
 }
 
