@@ -1,5 +1,5 @@
 html, body { /* Used to let the flex columns use up all the vertical space*/
-    height: 100%;
+    height: 70em; /*using em instead of px (static measurement) to meassure based on relative size of window*/
     margin: 0;
 } 
 
@@ -24,9 +24,17 @@ body { /* Flex container */
     background-color: orange;
     flex: 1.5;
     display: flex;
+    gap: 1em;
     justify-content: center;
     align-items: center;
     background-color: #1F2937;
+}
+@media screen and (max-width: 750px) { 
+    .second {
+        flex-direction: column;
+    }/*if the screen width is less the 750px then it 
+    changes the flex direction to column to fit the 
+    welcome message and image*/
 }
 .third {
     background-color: white;
@@ -38,8 +46,16 @@ body { /* Flex container */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 8em;
     background-color: white;
+    flex-wrap: wrap;
+
+}
+@media screen and (max-width: 750px) { 
+    .fourth {
+        gap: 2em;
+    }/*if the screen width is less the 750px then it 
+    cuts the gap between the image icons*/
 }
 .fifth {
     background-color: #E5E7EB;
@@ -48,6 +64,7 @@ body { /* Flex container */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .sixth {
     background-color: white;
@@ -67,11 +84,11 @@ body { /* Flex container */
     display: flex;
     margin: 0;
     color: white;
-    gap: 20px;
+    gap: 1em; /*changed from px to em to avoid header links from smashing together*/
     font-size: small;
 }
 .spacer { /* Empty flex item used for spacing when zooming in and out of webpage */
-    flex: 2;
+    flex: 1;
     margin-right: -700px;
 }
 .Header-Logo {
@@ -119,6 +136,19 @@ body { /* Flex container */
     height: 170px;
     background-color: rgb(143, 142, 142);
 }
+@media screen and (max-width: 750px) { 
+    .second .right-panel {
+        width: 23em;
+        margin-bottom: 1em;
+    }/*if the screen width is less the 750px then it 
+    cuts the width of the right panel*/
+}
+@media screen and (max-width: 750px) { 
+    .second .right-panel img {
+        width: 23em;
+    }/*if the screen width is less the 750px then it 
+    cuts the width of the image in the right panel*/
+}
 
 /* third section ~ title header*/
 .third {
@@ -150,11 +180,18 @@ body { /* Flex container */
 
 /* fifth section ~ quote and author credit*/
 .fifth .quote {
-    width: 500px;
+    width: 35em;
     height: 100px;
+    padding-left: 15px;
     color: rgb(59, 59, 59);
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
+}
+@media screen and (max-width: 750px) { 
+    .fifth .quote {
+        width: 29em;
+    }/*if the screen width is less the 750px then it 
+    cuts the width of the quote flexbox*/
 }
 .fifth .author {
     width: 450px;
